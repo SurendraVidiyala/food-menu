@@ -4,13 +4,15 @@
     "description": "Simple restaurant page with food menu to add to cart",
     "main": "index.js",
     "scripts": {
+        "dev": "lite-server",
         "preserve": "npm run build",
         "build:js": "browserify src/js/index.js -d -t babelify -o build/bundle.js",
         "watch:js": "watchify src/js/index.js -d -v -t babelify -o build/bundle.js",
         "build:scss": "node-sass src/scss/styles.scss --output build --source-map-embed --source-map-contents",
         "watch:scss": "npm run build:scss -- --watch",
         "build": "npm run build:js && npm run build:scss",
-        "serve": "concurrently \"npm run watch:js\" \"npm run watch:scss\" \"lite-server\""
+        "serve": "concurrently \"npm run watch:js --& > /dev/null 2>&1\" \"npm run watch:scss --& > /dev/null 2>&1\" \"lite-server\""
+
     },
     "repository": {
         "type": "git",
