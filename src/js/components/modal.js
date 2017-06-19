@@ -9,7 +9,8 @@ export default function modal(items = []) {
     if (items.length === 0) {
         cart = p(text('Your cart is empty.'));
     } else {
-        cart = addClass(ul(items.map(modalItem), 'menu'));
+        const modalItems = items.map(modalItem);
+        cart = addClass(ul(...modalItems), 'menu');
     }
     const cartContainer = addId(div(cart), 'cart-items');
     const checkoutButton = addClass(button(text('Checkout')), 'button', 'is-fullwidth');
