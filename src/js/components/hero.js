@@ -1,7 +1,7 @@
 import { addClass, div, img, p, section, text } from '../builders';
 
 export default function hero() {
-    const logo = addClass(img('static/fancybear_white.png'), 'logo');
+    const logo = addClass(img('static/chef_white.png'), 'logo');
     const the = addClass(p(text('The')), 'hero-text-light');
     const southIndian = addClass(p(text('South Indian')), 'hero-text-bold');
     const cuisine = addClass(p(text('Cuisine')), 'hero-text-light');
