@@ -4,6 +4,6 @@ import hero from './hero';
 export default function app() {
     const navbarEle = navbar();
     const heroEle = hero();
-    const appEle = addId(div(navbarEle), 'app-container');
+    const appEle = addId(div(navbarEle, heroEle), 'app-container');
     return appEle;
 }

@@ -14,7 +14,9 @@ export function div(...children) {
 export function i(...children) {
     return createElement('i', ...children);
 }
-
+export function span(...children) {
+    return createElement('span', ...children);
+}
 export function nav(...children) {
     return createElement('nav', ...children);
 }
@@ -30,10 +32,6 @@ export function img(source) {
     const image = createElement('img');
     image.src = source;
     return image;
-}
-
-export function span(...children) {
-    return createElement('span', ...children);
 }
 
 export function addClass(element, ...klasses) {
