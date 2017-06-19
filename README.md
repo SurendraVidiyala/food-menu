@@ -1,4 +1,7 @@
-# food-menu
+# Restaurant Menu 
+
+This is an interactive menu created for a fictional restaurant.  This project was made entirely in vanilla JavaScript without the help of any libraries.  [Browserify](https://github.com/substack/node-browserify#usage) and [Babel](https://github.com/babel/babel) were used to convert the ES6 to ES5 and then bundle all the modules together.
+
 # In the Package.json file
 ````
  "serve": "npm run build; npm run watch:js -- & > /dev/null 2>&1; npm run watch:scss -- & > /dev/null 2>&1; lite-server"
