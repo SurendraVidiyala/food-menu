@@ -39,6 +39,9 @@ export function h1(...children) {
 export function article(...children) {
     return createElement('article', ...children);
 }
+export function footer(...children) {
+    return createElement('footer', ...children);
+}
 
 export function h3(...children) {
     return createElement('h3', ...children);
